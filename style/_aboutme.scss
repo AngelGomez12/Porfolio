@@ -1,0 +1,8 @@
+
+@import 'mixins.scss';
+
+
+.container-cards {
+    @include flex (center,center);
+    flex-direction: column;
+}

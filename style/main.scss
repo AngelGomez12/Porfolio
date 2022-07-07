@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @import 'header.scss';
 @import 'banner.scss';
+@import 'aboutme.scss';
+@import 'mixins.scss';
 
 
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: #f3f0f0;
+    font-family: 'Roboto','sans serif';
 }
