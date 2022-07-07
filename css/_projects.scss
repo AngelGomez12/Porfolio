@@ -1,5 +1,5 @@
-@import '../base/mixins';
-@import '../base/variables';
+@import 'mixins';
+@import 'variables';
 
 .container-projects {
     @include flex (space-evenly,space-evenly);
@@ -7,7 +7,7 @@
                 @include flex (center,center);
                 flex-direction: column;
                 background-color: $color-primario;
-                border-radius: 10%;
+                border-radius: 20%;
                 img {
                     width: 300px;
                     height: 300px;
