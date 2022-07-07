@@ -1,58 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  background-color: #f3f0f0;
-  font-family: "Roboto", "sans serif";
-}
-
-.container-nav {
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-  background-color: #1D82B5;
-  position: fixed;
-  width: 100vw;
-}
-.container-nav .list {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-.container-nav .list .items {
-  padding-left: 30px;
-  text-decoration: none;
-  color: white;
-}
-.container-nav .list .items:hover {
-  color: #28B2F5;
-}
-
-.banner {
-  background-image: url("../img/laptop-wallpaper-1920x1080.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.banner h1, .banner p {
-  display: flex;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  color: #135475;
-  font-size: 50px;
-  margin: 15px;
-}
-.banner p {
-  font-size: 25px;
-}
-
 .aboutme .titulo {
   display: flex;
   justify-content: center;
@@ -79,6 +25,51 @@ body {
   height: 200px;
 }
 
+.banner {
+  background-image: url("../img/laptop-wallpaper-1920x1080.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner h1, .banner p {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #135475;
+  font-size: 50px;
+  margin: 15px;
+}
+.banner p {
+  font-size: 25px;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  background-color: #1D82B5;
+  position: fixed;
+  width: 100vw;
+}
+.container-nav .list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.container-nav .list .items {
+  padding-left: 30px;
+  text-decoration: none;
+  color: white;
+}
+.container-nav .list .items:hover {
+  color: #28B2F5;
+}
+
 .container-projects {
   display: flex;
   justify-content: space-evenly;
@@ -103,4 +94,12 @@ body {
   align-items: center;
   margin-bottom: 30px;
   color: #135475;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #28B2F5;
+  font-family: "Roboto", "sans serif";
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
-@import 'mixins.scss';
-@import 'variables.scss';
+@import '../base/mixins';
+@import '../base/variables';
 
 .container-projects {
     @include flex (space-evenly,space-evenly);
