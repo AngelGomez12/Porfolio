@@ -1,9 +1,10 @@
+@import 'variables.scss';
 
 .container-nav {
     display: flex;
     justify-content: space-around;
     height: 50px;
-    background-color: #584b4b;
+    background-color: $color-primario;
     position: fixed;
     width: 100vw;
         .list {
@@ -15,7 +16,7 @@
                         text-decoration: none;
                         color: white;
                             &:hover {
-                                color: #888783;
+                                color: $color-terciario;
                             }
                     }                
 
