@@ -66,8 +66,8 @@
   flex-direction: column;
 }
 .aboutme .container-cards img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .container-projects {
@@ -96,10 +96,32 @@
   color: #135475;
 }
 
+.footer {
+  background-color: #092736;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.container-redes {
+  width: 200px;
+}
+.container-redes .redes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-redes .redes .icono {
+  width: 40px;
+  height: 40px;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #f3f0f0;
+  background-color: #faf7f7;
   font-family: "Roboto", "sans serif";
 }/*# sourceMappingURL=main.css.map */

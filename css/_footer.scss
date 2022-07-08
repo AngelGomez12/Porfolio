@@ -1,0 +1,19 @@
+
+.footer {
+    background-color: $color-cuarto;
+    height: 200px;
+    @include flex(space-around,center);
+    color: #fff;
+}
+
+.container-redes {
+    width: 200px;
+
+    .redes {
+        @include flex(space-evenly,center);
+        .icono {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
