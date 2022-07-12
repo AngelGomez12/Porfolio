@@ -43,19 +43,30 @@
 
         #escribe {
             @extend #name;
+            resize: none;
         }
 
         .btn {
             background-color: $color-secundario;
             color: #fff;
             border: none;
-            width: 70px;
-            height: 30px;
-            margin: 20px 0px 20px 0px;
+            width: 100px;
+            height: 40px;
+            margin: 20px 0px 40px 0px;
             border-radius: 10px;
             cursor: pointer;
                     &:hover {
                         background-color: $color-primario;
                     }
         }
+}
+
+
+.name {
+    @include flex (center,center);
+    flex-direction: column;
+}
+
+.email {
+    @extend .name;
 }
