@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #faf7f7;
+  font-family: "Roboto", "sans serif";
+}
+
 .container-nav {
   display: flex;
   justify-content: space-around;
@@ -70,22 +78,37 @@
   height: 150px;
 }
 
-.container-projects {
+.section-projects {
+  height: 700px;
+  background-color: #135475;
+}
+.section-projects .container-projects {
   display: flex;
   justify-content: space-evenly;
   align-items: space-evenly;
 }
-.container-projects .project {
+.section-projects .container-projects .project {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #1D82B5;
-  border-radius: 20%;
-}
-.container-projects .project img {
+  background-color: #fff;
+  border-radius: 15px;
   width: 300px;
-  height: 300px;
+  height: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+.section-projects .container-projects .project:hover {
+  width: 310px;
+  height: 410px;
+  box-shadow: 0 0 15px rgba(142, 141, 141, 0.75);
+}
+.section-projects .container-projects .project img {
+  width: 200px;
+  height: 250px;
+}
+.section-projects .container-projects .project p {
+  margin-top: 25px;
 }
 
 .titulo-projects {
@@ -93,7 +116,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  color: #135475;
+  color: #1D82B5;
+  font-size: 2.5rem;
 }
 
 .footer {
@@ -118,10 +142,68 @@
   height: 40px;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  background-color: #faf7f7;
-  font-family: "Roboto", "sans serif";
+.section-contact {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.section-contact .container-contact {
+  background-color: #28B2F5;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.section-contact .container-contact .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-contact h3 {
+  font-size: 3rem;
+}
+.section-contact #nomail {
+  display: none;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form #name, .form #escribe, .form #email {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.form #name ::-moz-placeholder, .form #escribe ::-moz-placeholder, .form #email ::-moz-placeholder {
+  padding-left: 20px;
+  color: #8e8e8e;
+}
+.form #name :-ms-input-placeholder, .form #escribe :-ms-input-placeholder, .form #email :-ms-input-placeholder {
+  padding-left: 20px;
+  color: #8e8e8e;
+}
+.form #name ::placeholder, .form #escribe ::placeholder, .form #email ::placeholder {
+  padding-left: 20px;
+  color: #8e8e8e;
+}
+.form .btn {
+  background-color: #135475;
+  color: #fff;
+  border: none;
+  width: 70px;
+  height: 30px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form .btn:hover {
+  background-color: #1D82B5;
 }/*# sourceMappingURL=main.css.map */

@@ -1,23 +1,40 @@
 @import 'mixins';
 @import 'variables';
 
-.container-projects {
-    @include flex (space-evenly,space-evenly);
-            .project {  
-                @include flex (center,center);
-                flex-direction: column;
-                background-color: $color-primario;
-                border-radius: 20%;
-                img {
+.section-projects {
+    height: 700px;
+    background-color: $color-secundario;
+    .container-projects {
+        @include flex (space-evenly,space-evenly);
+                .project {  
+                    @include flex (center,center);
+                    flex-direction: column;
+                    background-color: #fff;
+                    border-radius: 15px;
                     width: 300px;
-                    height: 300px;
-                }
+                    height: 400px;
+                    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+                    &:hover {
+                        width: 310px;
+                        height: 410px;
+                        box-shadow: 0 0 15px rgba(142, 141, 141, 0.75);
+                    }
+                    img {
+                        width: 200px;
+                        height: 250px;
+                    }
 
-            }
+                    p {
+                        margin-top: 25px;
+                    }
+                    
+                }
+    }
 }
 
 .titulo-projects {
     @include flex (center,center);
     margin-bottom: 30px;
-    color: $color-secundario;
+    color: $color-primario;
+    font-size: 2.5rem;
 }

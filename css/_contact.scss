@@ -1,0 +1,61 @@
+
+.section-contact {
+    height: 700px;
+    @include flex (center,center);
+    color: #fff;
+        .container-contact {
+            background-color: $color-terciario;
+            width: 500px;
+            height: 500px;
+            @include flex(center,center);
+            border-radius: 10px;
+                .contact {
+                    @include flex (center,center);
+                    flex-direction: column
+                }
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        #nomail {
+            display: none;
+        }
+}
+
+.form {
+    @include flex (center,center);
+    flex-direction: column;
+        #name {
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+                ::placeholder {
+                    padding-left: 20px;
+                    color: #8e8e8e;
+                }
+        }
+
+        #email {
+            @extend #name;
+        }
+
+        #escribe {
+            @extend #name;
+        }
+
+        .btn {
+            background-color: $color-secundario;
+            color: #fff;
+            border: none;
+            width: 70px;
+            height: 30px;
+            margin: 20px 0px 20px 0px;
+            border-radius: 10px;
+            cursor: pointer;
+                    &:hover {
+                        background-color: $color-primario;
+                    }
+        }
+}
