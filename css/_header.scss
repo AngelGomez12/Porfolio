@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .container-nav {
     display: flex;
@@ -7,6 +8,15 @@
     background-color: $color-primario;
     position: fixed;
     width: 100vw;
+
+        .container-icono {
+            @include flex (center,center);
+
+                .icono-header, a{
+                    height: 90%;
+                }
+        }
+
         .list {
             display: flex;
             justify-content: space-evenly;
@@ -15,6 +25,7 @@
                         padding-left: 30px;
                         text-decoration: none;
                         color: white;
+                        transition: all 3s ease;
                             
                             &:hover {
                                 color: $color-terciario;
