@@ -1,0 +1,35 @@
+@media screen and (max-width:480px) {
+
+    .container-nav {
+        .container-list {
+            display: none;
+        }
+    
+        .menu-hamburguesa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+               
+        }
+    }
+
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-projects {
+        height: 100%;
+        padding: 2rem;
+
+        .container-projects {
+            flex-wrap: wrap;
+            align-items: center;
+                .project {
+                    justify-content: center;
+                    margin: 2rem;
+                }
+        }
+    }
+}

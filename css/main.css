@@ -41,6 +41,9 @@ body {
 .container-nav .list .items:hover {
   color: #28B2F5;
 }
+.container-nav .menu-hamburguesa {
+  display: none;
+}
 
 .banner {
   background-image: url("../img/laptop-wallpaper-1920x1080.jpg");
@@ -238,4 +241,31 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+  .container-nav .container-list {
+    display: none;
+  }
+  .container-nav .menu-hamburguesa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-projects {
+    height: 100%;
+    padding: 2rem;
+  }
+  .section-projects .container-projects {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .section-projects .container-projects .project {
+    justify-content: center;
+    margin: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
